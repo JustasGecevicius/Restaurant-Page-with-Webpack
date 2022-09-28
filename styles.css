@@ -1,0 +1,81 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+button.underline {
+  border-bottom: 2px solid white;
+}
+
+body {
+  background-image: url("../Images/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg");
+  background-position: bottom;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.mainDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainDiv .navBarDiv {
+  width: 100%;
+  font-family: "Dancing Script";
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.mainDiv .navBarDiv * {
+  margin: 10px 10px 10px 0px;
+}
+.mainDiv .navBarDiv button {
+  font-family: "Montserrat";
+  padding: 2px 7px;
+  background: rgba(0, 0, 0, 0);
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.mainDiv .navBarDiv h1 {
+  font-size: 3rem;
+}
+.mainDiv .mainBodyDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  gap: 5%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 74%;
+  margin-top: 5%;
+  color: white;
+}
+.mainDiv .mainBodyDiv h2 {
+  font-family: "Montserrat";
+}
+.mainDiv .mainBodyDiv h3 {
+  font-family: "Dancing Script";
+  font-size: 1.8rem;
+}
+
+img {
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-position: center center;
+  }
+}/*# sourceMappingURL=styles.css.map */
