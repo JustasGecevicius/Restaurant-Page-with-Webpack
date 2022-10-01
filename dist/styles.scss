@@ -1,83 +1,115 @@
-*, *::after, *::before{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-button{
-    border: none;
+button {
+  border: none;
 }
-button.underline{
-    border-bottom: 2px solid white;  
+button.underline {
+  border-bottom: 2px solid white;
 }
 
-body{
-    background-image: url("../Images/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg");
-    background-position: bottom;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    height: 100vh;
+body {
+  background-image: url("../Images/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+  outline: red;
 }
-.mainDiv{
-    height:100vh;
+.mainDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .navBarDiv {
+    width: 100%;
+    * {
+      margin: 10px 10px 10px 0px;
+    }
+    button {
+      font-family: "Montserrat";
+      padding: 2px 7px;
+      background: rgba(0, 0, 0, 0);
+
+      color: inherit;
+
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    font-family: "Dancing Script";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .mainBodyDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .navBarDiv{
-        width: 100%;
-        *{
-            margin: 10px 10px 10px 0px;
-        }
-        button{
-            font-family: 'Montserrat';
-            padding: 2px 7px;
-            background: rgba(0, 0, 0, 0.0);
- 
-	    color: inherit;
-
-        font-size: 1.5rem;
-	    cursor: pointer;
-
-        }
-        h1{
-            font-size: 3rem;
-        }
-        font-family: 'Dancing Script';
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-
+    padding: 2rem;
+    gap: 1rem;
+    width: 80%;
+    min-width: 70vw;
+    max-width: 60vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 2rem;
+    margin-bottom: 10vh;
+    color: white;
+    h2 {
+      font-family: "Montserrat";
     }
-    .mainBodyDiv{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5%;
-        gap: 5%;
-        width: 80%;
-        background-color: rgba(0, 0, 0, 0.7);
-        height: 74%;
-        //outline: solid red;
-        margin-top: 5%;
-        color: white;
-        h2{
-                    font-family: 'Montserrat';
-        }
-        h3{
-            font-family: 'Dancing Script';
-            font-size: 1.8rem;
-        }
+    h3 {
+      font-family: "Dancing Script";
+      font-size: 1.8rem;
     }
-
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+  .mainBodyDiv.About {
+    overflow-y: auto;
+    // justify-content: center;
+  }
+  .mainBodyDiv.Menu {
+    overflow-y: auto;
+  }
+  .mainBodyDiv.News {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    h4 {
+      font-family: "Dancing Script";
+      font-size: 0.8rem;
+    }
+    p {
+      font-family: "Montserrat";
+      margin-top: 1rem;
+    }
+    overflow-y: auto;
+  }
+  .mainBodyDiv.Location {
+    overflow-y: auto;
+    padding: 10vh;
+    max-width: fit-content;
+  }
 }
-img{
-    max-width: 50%;
+img {
+  max-width: 25rem;
 }
-@media only screen and (max-width: 700px){
-    body{
-        background-position:center center;
-    }
-    
+
+.itemDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }

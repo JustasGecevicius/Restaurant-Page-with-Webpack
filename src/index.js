@@ -1,6 +1,21 @@
-import {mainDiv} from "./generatePage";
+import { addingEventListeners } from "./pageFunctions";
+import { basePageBuilder } from "./generateBasePage";
+import { generateAboutPage} from "./generateAboutPage";
+import { generateLocationPage } from "./generateLocationPage";
+import { generateMenuPage } from "./generateMenuPage";
+import { generateNewsPage} from "./generateNewsPage";
+
+
 
 const div = document.querySelector("#content");
-div.appendChild(mainDiv);
 
-console.log("zeba234555");
+let generateWelcomePage = (() => {   
+    basePageBuilder();
+    generateAboutPage();
+    addingEventListeners();
+})();
+
+
+
+
+
