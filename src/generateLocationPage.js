@@ -16,7 +16,7 @@ h3line.innerHTML = "64 Pl. Drouet d'Erlon, 51100 Reims";
 const h3line2 = document.createElement("h3"); 
 h3line2.innerHTML = "Feel free to visit any time!";
 const image = document.createElement("img");
-image.setAttribute("src", "../Images/googlemaps-Zyrgon.jpg");
+image.setAttribute("src", "./Images/googlemaps-Zyrgon.jpg");
 
 
 
