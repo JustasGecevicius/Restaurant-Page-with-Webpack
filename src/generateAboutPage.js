@@ -16,7 +16,7 @@ h3line.innerHTML = "Established 2005";
 const h3line2 = document.createElement("h3"); 
 h3line2.innerHTML = "Feel free to visit any time!";
 const image = document.createElement("img");
-image.setAttribute("src", "./Images/Pizza-chef-smilling-and-happy-vector-PNG.png");
+image.setAttribute("src", "Images/Pizza-chef-smilling-and-happy-vector-PNG.png");
 
 
 
